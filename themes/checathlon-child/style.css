@@ -2,7 +2,7 @@
 Theme Name: Checathlon Child
 Theme URI: N/A
 Author: Workday
-Author URI: https://foxland.fi/
+Author URI: https://workday.com
 Description: Checathlon Child Theme
 Template:     checathlon
 Version:      1.0.0
@@ -41,6 +41,129 @@ Tags: one-column, grid-layout, footer-widgets, accessibility-ready, custom-backg
   14.3 EDD
   14.4 EDD Download Info
   14.5 Message Board
-15 Dev changes
+15 Specific pages
+  15.1 Homepage
 
 --------------------------------------------------------------*/
+.title-font,
+.page-title,
+.after-content-widget-area .widget:first-of-type .widget-title,
+.front-page-widget-area .widget:first-of-type .widget-title,
+blockquote {
+	font-family: Source Sans Pro;
+    font-style: normal;
+}
+
+
+header.page-header,
+header.entry-header{
+	max-width: none;
+}
+
+.text-italic{
+	font-style:normal;
+}
+
+
+.text-center{
+ text-align:left;
+}
+
+/*--------------------------------------------------------------
+ Submenu buttons 
+--------------------------------------------------------------*/
+
+.subMenu-toggle{
+  border-radius: 50%;
+  background-color: white;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid rgb(3, 2, 2);
+}
+
+.subMenu-toggle.expanded > svg{
+  transform: rotate(180deg);
+}
+
+/*--------------------------------------------------------------
+ Submenus 
+--------------------------------------------------------------*/
+
+.js .sub-menu{
+  display:block;
+}
+
+.js .sub-menu.hide{
+  display:none;
+}
+
+.js .menu-item-has-children > a > .icon, 
+.js .page_item_has_children > a > .icon{
+  display:none;
+}
+
+/*--------------------------------------------------------------
+ Typography 
+--------------------------------------------------------------*/
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  /* identical to box height, or 122% */
+  color: #333333;
+}
+
+h2 {
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  /* identical to box height, or 120% */
+  color: #333333;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  /* identical to box height, or 140% */
+  color: #333333;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  /* identical to box height, or 125% */
+  color: #333333;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  /* or 167% */
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.large {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  /* or 167% */
+  color: #333333;
+}
+
+
+
+/*--------------------------------------------------------------
+15.1 Home page
+--------------------------------------------------------------*/
+
+body.home h1.page-title{
+	display:none;
+}
+
+body.home .entry-front-page-content p{
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  /* or 167% */
+  color: #333333;
+}
